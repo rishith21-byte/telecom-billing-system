@@ -103,7 +103,7 @@ cd telecom-billing-system
 ### 3. Install the required Python packages
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 4. Configure MySQL
