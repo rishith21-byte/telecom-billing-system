@@ -5,13 +5,12 @@ def add_customer():
     phone = input("Enter Phone Number: ")
     email = input("Enter Email: ")
     address = input("Enter Address: ")
-    aadhaar = input("Enter Aadhaar Number: ")
     plan_id = int(input("Enter Plan ID: "))
 
     sql = """
     INSERT INTO customer
-    (name, phone, email, address, aadhaar, plan_id)
-    VALUES (%s, %s, %s, %s, %s, %s)
+    (name, phone, email, address, plan_id)
+    VALUES (%s, %s, %s, %s, %s)
     """
 
     values = (
@@ -19,7 +18,6 @@ def add_customer():
         phone,
         email,
         address,
-        aadhaar,
         plan_id
     )
 
@@ -47,7 +45,7 @@ def view_customers():
             customer[1],
             customer[2],
             customer[3],
-            customer[6]
+            customer[4]
         ))
 
 
@@ -70,7 +68,6 @@ def update_customer():
     phone = input("New Phone: ")
     email = input("New Email: ")
     address = input("New Address: ")
-    aadhaar = input("New Aadhaar: ")
     plan_id = int(input("New Plan ID: "))
 
     sql = """
@@ -79,7 +76,6 @@ def update_customer():
         phone=%s,
         email=%s,
         address=%s,
-        aadhaar=%s,
         plan_id=%s
     WHERE customer_id=%s
     """
@@ -89,7 +85,6 @@ def update_customer():
         phone,
         email,
         address,
-        aadhaar,
         plan_id,
         customer_id
     )
