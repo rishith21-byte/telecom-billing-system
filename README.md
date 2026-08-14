@@ -53,7 +53,7 @@ The dashboard provides a centralized interface for accessing the major modules o
 
 * **Python** – Application development and business logic
 * **MySQL** – Database management and data storage
-* **Tkinter / GUI Interface** – Dashboard and user interface
+* **Pyside6** – Dashboard and user interface
 * **MySQL Connector for Python** – Database connectivity
 
 ## 📂 Project Structure
@@ -91,7 +91,7 @@ The Python application communicates with MySQL using a database connector.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/telecom-billing-system.git
+git clone https://github.com/rishith21-byte/telecom-billing-system.git
 ```
 
 ### 2. Open the project folder
